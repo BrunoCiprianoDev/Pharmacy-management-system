@@ -1,0 +1,61 @@
+.MainContainerNavbar {
+    background-color: rgb(156, 156, 156);
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 6em auto;
+    grid-template-areas: "sideIcons headerNav"
+                        "sideIcons contend";
+                  
+}
+
+.HeaderNavbar {
+    box-shadow: -1px 10px 10px rgba(0, 0, 0, 0.45);
+    background-color: rgb(97 97 97);
+    height: 100%;
+    grid-area: headerNav;
+}
+
+.SideIcons {
+    grid-area: sideIcons;
+    width: 4.5em;
+    height: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+    .SideIcons {
+        grid-area: sideIcons;
+        width: 0em;
+        height: 100%;
+    }
+}
+
+.ContainerNav {
+	box-shadow: -1px 10px 10px rgba(0, 0, 0, 0.45);
+    font-size: large;
+    grid-area: contend;
+    height: 100%;
+
+}
+
+nav {
+    box-sizing: border-box;
+    padding-bottom: 30%;
+    min-height: max-content;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(97 97 97);
+}
+
+.NavLink {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1em;
+    height: 10%;
+}
+
+.NavLink:hover {
+    background-color: rgb(156, 156, 156);
+}

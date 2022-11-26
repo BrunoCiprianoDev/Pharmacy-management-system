@@ -1,0 +1,79 @@
+.ContainerHeader {
+    border-bottom: 1px solid black;
+    height: 100%;
+}
+
+.ButtonAdd {
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1.7em;
+    margin-left: 0.7em;
+    color: white;
+    background-color: rgb(97 97 97);
+    box-shadow: -1px 5px 10px rgba(0, 0, 0, 0.45);
+    
+}
+
+.ButtonAdd:hover {
+    background-color: rgb(214, 211, 211);
+    color:rgb(124, 124, 124);
+    border: 1px solid rgb(124, 124, 124);
+}
+
+.HeaderForm {
+    height: 2em;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 30%;
+    height: 1.8em;
+    margin-top: 3.5em;
+    margin-right: 2em;
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 900px)  {
+    .HeaderForm {
+        height: 2em;
+        float: right;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 13em;
+        height: 1.8em;
+        margin-top: 3.5em;
+        margin-right: 2em;
+    }
+}
+
+
+
+.HeaderInput {
+    height: 2em;
+    border-color:rgb(124, 124, 124);
+    border-radius: 5px;
+    background-color: rgb(214, 211, 211);
+    box-shadow: -1px 5px 10px rgba(0, 0, 0, 0.45);
+    margin-right: 2px;
+    width: 100%;
+}
+
+.ButtonHeaderInput{
+    height: 2em;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(97 97 97);
+    box-shadow: -1px 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.ButtonHeaderInput:hover {
+    background-color: rgb(214, 211, 211);
+    color:rgb(124, 124, 124);
+    border: 1px solid rgb(124, 124, 124);
+}

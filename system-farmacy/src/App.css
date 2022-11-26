@@ -1,0 +1,28 @@
+.App {
+  background-color: rgb(214, 211, 211);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(20em, 20%) auto;
+  grid-template-rows: minmax(7em, 10%) auto;
+  grid-template-areas: "sidebar header "
+                 "sidebar contend"
+                 "sidebar contend";
+}
+
+.Header {
+  grid-area: header;
+  width: 100%;
+}
+
+
+.Sidebar {
+  box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.45);
+  grid-area: sidebar;
+}
+
+
+
+.Contend {
+  grid-area: contend;
+}
