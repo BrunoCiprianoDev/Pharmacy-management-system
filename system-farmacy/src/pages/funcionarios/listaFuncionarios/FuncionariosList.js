@@ -15,9 +15,11 @@ const Funcionarios = () => {
 
     const navigate = useNavigate();
     const url = "http://localhost:3000/funcionarios/";
-    const {data: funcionarios, loading, error} = useFetch(url);
+    const {data: funcionarios, httpConfig, loading, error} = useFetch(url);
 
-    console.log(funcionarios);
+    const handleRemove = (id) =>{
+        httpConfig(id, "DELETE");
+    }
 
   return (
     <div className={styles['MainContainer']}>
@@ -27,13 +29,16 @@ const Funcionarios = () => {
         </div>
         <div>
             {funcionarios && funcionarios.map((funcionario)=>(
-                <div key={funcionario.id} className={styles['ComponentList']} onClick={()=>(navigate('/funcionarios/'+funcionario.id))}>
+                <div key={funcionario.id} className={styles['ComponentList']} >
                     <div className={styles['DataArea']}>{funcionario.nome}</div> 
                     <div className={styles['DataArea']}>{funcionario.cpf}</div> 
                     <div className={styles['DataArea']}>{funcionario.telefone_um}<br/>{funcionario.telefone_dois}</div> 
                     <div className={styles['DataArea']}>{funcionario.email}</div>
                     <div className={styles['DataArea']}>{funcionario.funcao}</div>
-                    <div className={styles['DataArea']}><button onClick={()=>alert("Delete "+funcionario.id)}>delete</button></div> 
+                    <div className={styles['DataArea']}>
+                        <button onClick={()=>handleRemove(funcionario.id)}>Excluir</button>
+                        <button onClick={()=>(navigate('/funcionarios/'+funcionario.id))}>Detalhes</button>
+                    </div> 
                 </div>
             ))}
         </div>

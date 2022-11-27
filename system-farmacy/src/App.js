@@ -4,6 +4,8 @@ import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
 import FuncionariosList from './pages/funcionarios/listaFuncionarios/FuncionariosList';
 import FuncionarioDetalhes from './pages/funcionarios/detalheFuncionario/FuncionarioDetalhes';
+import FormFuncionarios from './pages/funcionarios/formFuncionarios/FormFuncionarios';
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/funcionarios" element={<FuncionariosList />} />
             <Route path="/funcionarios/:id" element={<FuncionarioDetalhes/>}/>
+            <Route path="/funcionarios/form" element={<FormFuncionarios/>}/>
           </Routes>
         </div>
         </BrowserRouter>

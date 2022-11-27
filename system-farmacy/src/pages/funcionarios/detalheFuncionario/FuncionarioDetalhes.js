@@ -25,6 +25,7 @@ const FuncionarioDetalhes = () => {
         <div className={styles['ContainerElement']}><label>Telefone 1</label><p>{funcionario && funcionario.telefone_um}</p></div>
         <div className={styles['ContainerElement']}><label>Telefone 2</label><p>{funcionario && funcionario.telefone_dois}</p></div>
         <div className={styles['ContainerElement']}><label>Email</label><p>{funcionario && funcionario.email}</p></div>
+        <div className={styles['ContainerElement']}><label>Data de admissão</label><p>{funcionario && funcionario.dt_admissao}</p></div>
         <div className={styles['ContainerElement']}><label>Função</label><p>{funcionario && funcionario.funcao}</p></div>
     </div>
   )
