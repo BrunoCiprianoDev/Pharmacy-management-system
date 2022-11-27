@@ -33,7 +33,7 @@ const Funcionarios = () => {
                     <div className={styles['DataArea']}>{funcionario.telefone_um}<br/>{funcionario.telefone_dois}</div> 
                     <div className={styles['DataArea']}>{funcionario.email}</div>
                     <div className={styles['DataArea']}>{funcionario.funcao}</div>
-                    <div className={styles['DataArea']}><button  onClick={()=>alert("Delete "+funcionario.id)}>delete</button></div> 
+                    <div className={styles['DataArea']}><button onClick={()=>alert("Delete "+funcionario.id)}>delete</button></div> 
                 </div>
             ))}
         </div>
