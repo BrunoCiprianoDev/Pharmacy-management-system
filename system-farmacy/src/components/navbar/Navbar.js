@@ -9,7 +9,7 @@ export const Navbar = () => {
       <div className='SideIcons'></div>
       <div className='ContainerNav'>
         <nav>
-          <NavLink className='NavLink'>Funcionários</NavLink>
+          <NavLink to="/funcionarios" className='NavLink'>Funcionários</NavLink>
           <NavLink className='NavLink'>Categorias</NavLink>
           <NavLink className='NavLink'>Mercadorias</NavLink>
           <NavLink className='NavLink'>Fornecedores</NavLink>

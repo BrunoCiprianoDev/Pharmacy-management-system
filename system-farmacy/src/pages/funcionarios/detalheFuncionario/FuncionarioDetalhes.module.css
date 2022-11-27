@@ -1,0 +1,14 @@
+.MainContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 2em;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+
+.ContainerElement p {
+    font-weight: bold;
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.24);
+    color: rgb(97 97 97);
+}

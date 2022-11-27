@@ -1,6 +1,7 @@
 import React from 'react'
-import { useFetch } from '../../hook/useFetch';
-import styles from './Funcionarios.module.css'
+import { useFetch } from '../../../hook/useFetch';
+import { useNavigate } from 'react-router-dom';
+import styles from './FuncionariosList.module.css'
 
 const parameters = [
     {id: 1, valor: "Nome"},
@@ -12,6 +13,7 @@ const parameters = [
 
 const Funcionarios = () => {
 
+    const navigate = useNavigate();
     const url = "http://localhost:3000/funcionarios/";
     const {data: funcionarios, loading, error} = useFetch(url);
 
@@ -25,13 +27,13 @@ const Funcionarios = () => {
         </div>
         <div>
             {funcionarios && funcionarios.map((funcionario)=>(
-                <div key={funcionario.id} className={styles['ComponentList']}>
+                <div key={funcionario.id} className={styles['ComponentList']} onClick={()=>(navigate('/funcionarios/'+funcionario.id))}>
                     <div className={styles['DataArea']}>{funcionario.nome}</div> 
                     <div className={styles['DataArea']}>{funcionario.cpf}</div> 
                     <div className={styles['DataArea']}>{funcionario.telefone_um}<br/>{funcionario.telefone_dois}</div> 
                     <div className={styles['DataArea']}>{funcionario.email}</div>
                     <div className={styles['DataArea']}>{funcionario.funcao}</div>
-                    <div className={styles['DataArea']}></div> 
+                    <div className={styles['DataArea']}><button  onClick={()=>alert("Delete "+funcionario.id)}>delete</button></div> 
                 </div>
             ))}
         </div>

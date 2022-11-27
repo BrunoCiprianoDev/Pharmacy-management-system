@@ -2,7 +2,8 @@ import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
-import Funcionarios from './pages/funcionarios/Funcionarios';
+import FuncionariosList from './pages/funcionarios/listaFuncionarios/FuncionariosList';
+import FuncionarioDetalhes from './pages/funcionarios/detalheFuncionario/FuncionarioDetalhes';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,8 @@ function App() {
         <div className="Sidebar"><Navbar/></div>
         <div className="Contend">
           <Routes>
-            <Route path="/funcionarios" element={<Funcionarios />} />
+            <Route path="/funcionarios" element={<FuncionariosList />} />
+            <Route path="/funcionarios/:id" element={<FuncionarioDetalhes/>}/>
           </Routes>
         </div>
         </BrowserRouter>
