@@ -62,8 +62,12 @@
     width: 100%;
 }
 
+.HeaderInput:focus{
+    outline-style: none;
+}
+
 .ButtonHeaderInput{
-    height: 2em;
+    height: 2.1em;
     border-radius: 5px;
     border-style: none;
     font-size: 1em;
@@ -76,4 +80,9 @@
     background-color: rgb(214, 211, 211);
     color:rgb(124, 124, 124);
     border: 1px solid rgb(124, 124, 124);
+}
+
+.ImageIconSearch {
+    height: 100%;
+    width: 100%;
 }

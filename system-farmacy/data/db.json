@@ -1,9 +1,73 @@
 {
-  "employees":
+  "funcionarios":
   [
       {
           "id": 1,
-          "name": "Miraldo Borges"
-      }
+          "nome": "Funcionario um",
+          "cpf": "---.---.---.--",
+          "dt_nascimento": "",
+          "cep": "",
+          "uf": "",
+          "cidade": "",
+          "bairro": "",
+          "logradouro": "",
+          "numero": "",
+          "complemento": "",
+          "telefone_um": "(00)00000-0000",
+          "telefone_dois": "(00)00000-0000",
+          "email": "emailUmFuncionario@email.com",
+          "funcao": "GERENTE"
+      },
+      {
+        "id": 2,
+        "nome": "Funcionario dois",
+        "cpf": "---.---.---.--",
+        "dt_nascimento": "",
+        "cep": "",
+        "uf": "",
+        "cidade": "",
+        "bairro": "",
+        "logradouro": "",
+        "numero": "",
+        "complemento": "",
+        "telefone_um": "(00)00000-0000",
+        "telefone_dois": "(00)00000-0000",
+        "email": "emailUmFuncionario@email.com",
+        "funcao": "VENDEDOR"
+    },
+    {
+      "id": 3,
+      "nome": "Funcionario Tres",
+      "cpf": "---.---.---.--",
+      "dt_nascimento": "",
+      "cep": "",
+      "uf": "",
+      "cidade": "",
+      "bairro": "",
+      "logradouro": "",
+      "numero": "",
+      "complemento": "",
+      "telefone_um": "(00)00000-0000",
+      "telefone_dois": "(00)00000-0000",
+      "email": "emailUmFuncionario@email.com",
+      "funcao": "VENDEDOR"
+    },
+    {
+      "id": 4,
+      "nome": "Funcionario quatro",
+      "cpf": "---.---.---.--",
+      "dt_nascimento": "",
+      "cep": "",
+      "uf": "",
+      "cidade": "",
+      "bairro": "",
+      "logradouro": "",
+      "numero": "",
+      "complemento": "",
+      "telefone_um": "(00)00000-0000",
+      "telefone_dois": "(00)00000-0000",
+      "email": "emailUmFuncionario@email.com",
+      "funcao": "VENDEDOR"
+    }
   ]
 }

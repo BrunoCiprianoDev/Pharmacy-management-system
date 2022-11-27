@@ -1,5 +1,4 @@
 .App {
-  background-color: rgb(214, 211, 211);
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   display: grid;
@@ -21,8 +20,17 @@
   grid-area: sidebar;
 }
 
-
-
 .Contend {
   grid-area: contend;
 }
+/*
+@media screen and (max-width: 900px) {
+  
+  .Contend {
+    grid-area: contend;
+    background-color: rgb(214, 211, 211);
+    width: 150vr;
+  }
+
+}
+*/

@@ -1,0 +1,36 @@
+.MainContainer {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.24);
+}
+
+.HeaderList {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(97 97 97);
+    border-bottom: 1px solid rgb(97 97 97);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+
+.DataArea {
+    display: inline;
+    text-align: center;
+    width: 10em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    word-break: break-all;
+}
+
+.ComponentList {
+    margin-top: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.45);
+}
+
+.ComponentList:hover {
+    background-color: rgb(156, 156, 156);
+}
