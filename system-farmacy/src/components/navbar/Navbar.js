@@ -17,7 +17,7 @@ export const Navbar = () => {
           <NavLink to="/funcionarios" onClick={()=>setOption('FUNCIONARIOS')} className={option === 'FUNCIONARIOS' ?  'NavLinkActive': 'NavLink'}>Funcionários</NavLink>
           <NavLink to="/categorias" onClick={()=>setOption('CATEGORIAS')} className={option === 'CATEGORIAS' ? 'NavLinkActive' : 'NavLink'} >Categorias</NavLink>
           <NavLink onClick={()=>setOption('MERCADORIAS')} className={option === 'MERCADORIAS' ? 'NavLinkActive' : 'NavLink'}>Mercadorias</NavLink>
-          <NavLink onClick={()=>setOption('FORNECEDORES')} className={option === 'FORNECEDORES' ? 'NavLinkActive' : 'NavLink'}>Fornecedores</NavLink>
+          <NavLink to="/fornecedores" onClick={()=>setOption('FORNECEDORES')} className={option === 'FORNECEDORES' ? 'NavLinkActive' : 'NavLink'}>Fornecedores</NavLink>
           <NavLink onClick={()=>setOption('COMPRAS')} className={option === 'COMPRAS' ? 'NavLinkActive' : 'NavLink'}>Compras</NavLink>
           <NavLink onClick={()=>setOption('ESTOQUE')} className={option === 'ESTOQUE' ? 'NavLinkActive' : 'NavLink'}>Estoque</NavLink>
           <NavLink onClick={()=>setOption('CONSULTAR_PRECO')} className={option === 'CONSULTAR_PRECO' ? 'NavLinkActive' : 'NavLink'}>Consultar preços</NavLink>

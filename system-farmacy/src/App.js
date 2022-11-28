@@ -10,6 +10,10 @@ import CategoriasList from './pages/categorias/listaCategorias/CategoriasList';
 import CategoriaDetalhes from './pages/categorias/detalheCategoria/CategoriaDetalhes';
 import FormCategorias from './pages/categorias/formCategorias/FormCategorias';
 import CategoriaSearch from './pages/categorias/searchCategoria/CategoriaSearch';
+import FornecedoresList from './pages/fornecedores/listaFornecedores/FornecedoresList';
+import FornecedorDetalhes from './pages/fornecedores/detalheFornecedores/FornecedorDetalhes';
+import FormFornecedores from './pages/fornecedores/formFornecedores/FormFornecedores';
+import SearchFornecedores from './pages/fornecedores/searchFornecedores/SearchFornecedoresList';
 
 function App() {
   return (
@@ -29,6 +33,10 @@ function App() {
             <Route path="/categorias/form" element={<FormCategorias/>}/>
             <Route path="/categorias/search" element={<CategoriaSearch/>}/>
 
+            <Route path="/fornecedores/" element={<FornecedoresList/>}/>
+            <Route path="/fornecedores/:id" element={<FornecedorDetalhes/>}/>
+            <Route path="/fornecedores/form" element={<FormFornecedores/>}/>
+            <Route path="/fornecedores/search" element={<SearchFornecedores/>}/>
           </Routes>
         </div>
         </BrowserRouter>

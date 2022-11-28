@@ -1,0 +1,64 @@
+.MainContainer {
+
+}
+
+.FormContainer {
+    min-width: 600px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    column-gap: 5%;
+    row-gap: 4em;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+
+.FormContainer div{
+    display: grid;
+}
+
+.FormContainer label {
+    font-weight: bold;
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.24);
+    color: rgb(97 97 97);
+}
+
+.FormContainer input {
+    height: 1.5em;
+    border-color:rgb(124, 124, 124);
+    border-radius: 5px;
+    background-color: rgb(214, 211, 211);
+    box-shadow: -1px 5px 10px rgba(0, 0, 0, 0.45);
+    margin-right: 2px;
+    width: 100%;
+    font-size: 1em;
+ }
+
+ .FormContainer input[type=date] {
+    height: 1.8em;
+    border-color:rgb(124, 124, 124);
+    border-radius: 5px;
+    background-color: rgb(214, 211, 211);
+    box-shadow: -1px 5px 10px rgba(0, 0, 0, 0.45);
+    margin-right: 2px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+ }
+
+ .FormContainer button {
+    box-shadow: -1px 5px 10px rgba(0, 0, 0, 0.45);
+    background-color: rgb(97 97 97);
+    border-style: none;
+    border-radius: 5px;
+    height: 3em;
+    width: 102%;
+    font-size: 1em;
+    color: white;
+ }
+
+ .FormContainer button:hover {
+    background-color: rgb(214, 211, 211);
+    color:rgb(124, 124, 124);
+    border: 1px solid rgb(124, 124, 124);
+ }

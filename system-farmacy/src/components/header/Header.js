@@ -15,6 +15,8 @@ const Header = () => {
       navigate("/funcionarios/form");
     }else if(option === "CATEGORIAS"){
       navigate("/categorias/form")
+    }else if(option === "FORNECEDORES"){
+      navigate("/fornecedores/form")
     }
 
   }
@@ -26,6 +28,9 @@ const Header = () => {
       setQuery('');
     }else  if(option === 'CATEGORIAS'){
       navigate("/categorias/search?q="+query);
+      setQuery('');
+    }else  if(option === 'FORNECEDORES'){
+      navigate("/fornecedores/search?q="+query);
       setQuery('');
     }
   }

@@ -88,6 +88,7 @@
   "fornecedores": [
     {
       "id": 1,
+      "nome": "fornecedorUm",
       "cnpj": "00.000.000/0000-00",
       "crt": "1",
       "cep": "00.000.000",
@@ -95,12 +96,13 @@
       "cidade": "Juiz de Fora",
       "logradouro": "Av.Nome da avenida",
       "numero": "0000",
-      "complemento": "000",
+      "complemento": "302",
       "telefone": "(22)22222-2222",
       "email": "emailFornecedor@email.com"
     },
     {
       "id": 2,
+      "nome": "fornecedorUm",
       "cnpj": "00.000.000/0000-00",
       "crt": "1",
       "cep": "00.000.000",
@@ -114,6 +116,7 @@
     },
     {
       "id": 3,
+      "nome": "fornecedorUm",
       "cnpj": "00.000.000/0000-00",
       "crt": "1",
       "cep": "00.000.000",
@@ -127,6 +130,7 @@
     },
     {
       "id": 4,
+      "nome": "fornecedorUm",
       "cnpj": "00.000.000/0000-00",
       "crt": "1",
       "cep": "00.000.000",
@@ -134,20 +138,7 @@
       "cidade": "Juiz de Fora",
       "logradouro": "Av.Nome da avenida",
       "numero": "0000",
-      "complemento": "000",
-      "telefone": "(22)22222-2222",
-      "email": "emailFornecedor@email.com"
-    },
-    {
-      "id": 5,
-      "cnpj": "00.000.000/0000-00",
-      "crt": "1",
-      "cep": "00.000.000",
-      "uf": "Minas Gerais",
-      "cidade": "Juiz de Fora",
-      "logradouro": "Av.Nome da avenida",
-      "numero": "0000",
-      "complemento": "000",
+      "complemento": "332",
       "telefone": "(22)22222-2222",
       "email": "emailFornecedor@email.com"
     }
