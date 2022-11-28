@@ -2,21 +2,21 @@
   "funcionarios": [
     {
       "id": 1,
-      "nome": "Funcionario um",
-      "cpf": "---.---.---.--",
+      "nome": "FuncionarioTeste",
+      "cpf": "130.766.455.20",
       "dt_nascimento": "14/02/2000",
       "cep": "--.---.---",
       "uf": "Minas Gerais",
       "cidade": "Juiz de Fora",
       "bairro": "Bairro de JF",
       "logradouro": "Av. juiz",
-      "numero": "486",
+      "numero": "FuncionarioTeste",
       "complemento": "302",
       "telefone_um": "(00)00000-0000",
       "telefone_dois": "(00)00000-0000",
       "email": "emailUmFuncionario@email.com",
-      "dt_admissao": "00/00/0000",
-      "funcao": "GERENTE"
+      "dt_admissao": "2003-12-31",
+      "funcao": "VENDEDOR"
     },
     {
       "id": 2,

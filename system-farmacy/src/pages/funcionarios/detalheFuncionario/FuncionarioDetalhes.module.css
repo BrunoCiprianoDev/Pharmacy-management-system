@@ -7,8 +7,34 @@
     padding-left: 10%;
 }
 
-.ContainerElement p {
+.MainContainer p {
     font-weight: bold;
     text-shadow: 2px 1px 4px rgba(0,0,0,0.24);
     color: rgb(97 97 97);
 }
+
+.MainContainer input[type='text'] {
+  display: flex;
+  border-style: none;
+  background-color: rgb(214, 211, 211);
+  text-shadow: 2px 1px 4px rgba(0,0,0,0.24); 
+  border-bottom: 1px solid rgb(97 97 97) ;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.MainContainer input:focus {
+    outline: none;
+}
+
+.MainContainer input[type='submit'] {
+    display: flex;
+    border: none;
+    margin-top: 6px;
+    background-color: rgb(97 97 97);
+    box-shadow: -1px 5px 10px rgba(0, 0, 0, 0.45);
+    color: white;
+    font-size: 1em;
+  }
+  
+

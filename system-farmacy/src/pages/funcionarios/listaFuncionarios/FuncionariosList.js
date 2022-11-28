@@ -23,13 +23,15 @@ const Funcionarios = () => {
 
   return (
     <div className={styles['MainContainer']}>
+        {loading && <p>Carregando....</p>}
+        {error && <p>Falha ao carregar dados....</p>}
         <div className={styles['HeaderList']}>
             {parameters.map((parameter)=>(<div key={parameter.id} className={styles['DataArea']}>{parameter.valor}</div>))}
             <div className={styles['DataArea']}></div>
         </div>
         <div>
             {funcionarios && funcionarios.map((funcionario)=>(
-                <div key={funcionario.id} className={styles['ComponentList']} >
+                <div key={funcionario.id} className={styles['ComponentList']}>
                     <div className={styles['DataArea']}>{funcionario.nome}</div> 
                     <div className={styles['DataArea']}>{funcionario.cpf}</div> 
                     <div className={styles['DataArea']}>{funcionario.telefone_um}<br/>{funcionario.telefone_dois}</div> 

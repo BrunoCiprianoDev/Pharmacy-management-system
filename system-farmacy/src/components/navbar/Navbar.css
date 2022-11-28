@@ -56,6 +56,15 @@ nav {
     height: 10%;
 }
 
+.NavLinkActive {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1em;
+    height: 10%;
+    border-right: 5px solid rgb(156, 156, 156);
+}
+
 .NavLink:hover {
     background-color: rgb(156, 156, 156);
 }
