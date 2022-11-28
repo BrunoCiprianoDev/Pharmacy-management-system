@@ -10,7 +10,8 @@ export const Navbar = () => {
   return (
     <div className='MainContainerNavbar'>
       <div className='HeaderNavbar'></div>
-      <div className='SideIcons'></div>
+      <div className='SideIcons'>
+      </div>
       <div className='ContainerNav'>
         <nav>
           <NavLink to="/funcionarios" onClick={()=>setOption('FUNCIONARIOS')} className={option === 'FUNCIONARIOS' ?  'NavLinkActive': 'NavLink'}>Funcionários</NavLink>

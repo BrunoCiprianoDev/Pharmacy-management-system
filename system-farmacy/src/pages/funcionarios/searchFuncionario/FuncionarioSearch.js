@@ -1,7 +1,7 @@
 import React from 'react'
 import { useFetch } from '../../../hook/useFetch';
-import { useNavigate } from 'react-router-dom';
-import styles from './FuncionariosList.module.css'
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import styles from './FuncionarioSearch.module.css'
 import iconeDetail from '../../../assets/iconeDetail.png' 
 import iconWaste from '../../../assets/iconeWaste.png'
 
@@ -13,11 +13,14 @@ const parameters = [
     {id: 5, valor: "Função"}
 ]
 
-const Funcionarios = () => {
+const FuncionarioSearch = () => {
 
     const navigate = useNavigate();
-    const url = "http://localhost:3000/funcionarios/";
+    let [searchParams] = useSearchParams();
+    const url = "http://localhost:3000/funcionarios?"+searchParams;
     const {data: funcionarios, httpConfig, loading, error} = useFetch(url);
+
+    console.log(url);
 
     const handleRemove = (id) =>{
         httpConfig(id, "DELETE");
@@ -54,4 +57,4 @@ const Funcionarios = () => {
   )
 }
 
-export default Funcionarios
+export default FuncionarioSearch

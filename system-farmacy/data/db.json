@@ -2,57 +2,285 @@
   "funcionarios": [
     {
       "id": 1,
-      "nome": "FuncionarioTeste",
-      "cpf": "130.766.455.20",
+      "nome": "Funcionario um",
+      "cpf": "848.523.477.20",
       "dt_nascimento": "14/02/2000",
       "cep": "--.---.---",
       "uf": "Minas Gerais",
       "cidade": "Juiz de Fora",
       "bairro": "Bairro de JF",
       "logradouro": "Av. juiz",
-      "numero": "FuncionarioTeste",
+      "numero": "Funcionario um",
       "complemento": "302",
       "telefone_um": "(00)00000-0000",
       "telefone_dois": "(00)00000-0000",
       "email": "emailUmFuncionario@email.com",
-      "dt_admissao": "2003-12-31",
-      "funcao": "VENDEDOR"
+      "dt_admissao": "00/00/0000",
+      "funcao": "GERENTE"
     },
     {
       "id": 2,
       "nome": "Funcionario Dois",
-      "cpf": "---.---.---.--",
+      "cpf": "899.766.544.10",
       "dt_nascimento": "14/02/2000",
-      "cep": "--.---.---",
+      "cep": "36.090.450",
       "uf": "Minas Gerais",
       "cidade": "Juiz de Fora",
       "bairro": "Bairro de JF",
       "logradouro": "Av. juiz",
-      "numero": "486",
+      "numero": "Funcionario Dois",
       "complemento": "302",
       "telefone_um": "(00)00000-0000",
       "telefone_dois": "(00)00000-0000",
-      "email": "emailUmFuncionario@email.com",
+      "email": "email31312Funcionario@email.com",
       "dt_admissao": "00/00/0000",
       "funcao": "VENDEDOR"
     },
     {
       "id": 3,
       "nome": "Funcionario Tres",
-      "cpf": "---.---.---.--",
+      "cpf": "999.888.777.66",
       "dt_nascimento": "14/02/2000",
-      "cep": "--.---.---",
+      "cep": "36.090.450",
       "uf": "Minas Gerais",
       "cidade": "Juiz de Fora",
       "bairro": "Bairro de JF",
       "logradouro": "Av. juiz",
-      "numero": "486",
+      "numero": "Funcionario Tres",
       "complemento": "302",
       "telefone_um": "(00)00000-0000",
       "telefone_dois": "(00)00000-0000",
       "email": "emailUmFuncionario@email.com",
       "dt_admissao": "00/00/0000",
       "funcao": "VENDEDOR"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "classe": "beleza",
+      "tipo": "remedio",
+      "classificacao": "tarja vermelha",
+      "desconto": "10%"
+    },
+    {
+      "id": "2",
+      "classe": "consumivel",
+      "tipo": "produto",
+      "classificacao": "LIVRE",
+      "desconto": "0%"
+    },
+    {
+      "id": "3",
+      "classe": "higienico",
+      "tipo": "produto",
+      "classificacao": "LIVRE",
+      "desconto": "0%"
+    },
+    {
+      "id": "4",
+      "classe": "antiepileptico",
+      "tipo": "remedio",
+      "classificacao": "tarja preta",
+      "desconto": "12%"
+    }
+  ],
+  "fornecedores": [
+    {
+      "id": 1,
+      "cnpj": "00.000.000/0000-00",
+      "crt": "1",
+      "cep": "00.000.000",
+      "uf": "Minas Gerais",
+      "cidade": "Juiz de Fora",
+      "logradouro": "Av.Nome da avenida",
+      "numero": "0000",
+      "complemento": "000",
+      "telefone": "(22)22222-2222",
+      "email": "emailFornecedor@email.com"
+    },
+    {
+      "id": 2,
+      "cnpj": "00.000.000/0000-00",
+      "crt": "1",
+      "cep": "00.000.000",
+      "uf": "Minas Gerais",
+      "cidade": "Juiz de Fora",
+      "logradouro": "Av.Nome da avenida",
+      "numero": "0000",
+      "complemento": "000",
+      "telefone": "(22)22222-2222",
+      "email": "emailFornecedor@email.com"
+    },
+    {
+      "id": 3,
+      "cnpj": "00.000.000/0000-00",
+      "crt": "1",
+      "cep": "00.000.000",
+      "uf": "Minas Gerais",
+      "cidade": "Juiz de Fora",
+      "logradouro": "Av.Nome da avenida",
+      "numero": "0000",
+      "complemento": "000",
+      "telefone": "(22)22222-2222",
+      "email": "emailFornecedor@email.com"
+    },
+    {
+      "id": 4,
+      "cnpj": "00.000.000/0000-00",
+      "crt": "1",
+      "cep": "00.000.000",
+      "uf": "Minas Gerais",
+      "cidade": "Juiz de Fora",
+      "logradouro": "Av.Nome da avenida",
+      "numero": "0000",
+      "complemento": "000",
+      "telefone": "(22)22222-2222",
+      "email": "emailFornecedor@email.com"
+    },
+    {
+      "id": 5,
+      "cnpj": "00.000.000/0000-00",
+      "crt": "1",
+      "cep": "00.000.000",
+      "uf": "Minas Gerais",
+      "cidade": "Juiz de Fora",
+      "logradouro": "Av.Nome da avenida",
+      "numero": "0000",
+      "complemento": "000",
+      "telefone": "(22)22222-2222",
+      "email": "emailFornecedor@email.com"
+    }
+  ],
+  "mercadorias": [
+    {
+      "id": 1,
+      "nome": "Medicamento um",
+      "codigo_barras": "0.000000.00000",
+      "descricao": "descrição remedio um",
+      "perecivel": true,
+      "estoque_minimo": 50,
+      "estoque_maximo": 150,
+      "estoque_atual": 75,
+      "preco": 12.99,
+      "categoria_id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Medicamento dois",
+      "codigo_barras": "0.000000.00000",
+      "descricao": "descrição remedio um",
+      "perecivel": true,
+      "estoque_minimo": 50,
+      "estoque_maximo": 150,
+      "estoque_atual": 75,
+      "preco": 12.99,
+      "categoria_id": 2
+    },
+    {
+      "id": 3,
+      "nome": "Medicamento um",
+      "codigo_barras": "0.000000.00000",
+      "descricao": "descrição remedio um",
+      "perecivel": true,
+      "estoque_minimo": 50,
+      "estoque_maximo": 150,
+      "estoque_atual": 75,
+      "preco": 12.99,
+      "categoria_id": 3
+    },
+    {
+      "id": 4,
+      "nome": "Medicamento um",
+      "codigo_barras": "0.000000.00000",
+      "descricao": "descrição remedio um",
+      "perecivel": true,
+      "estoque_minimo": 50,
+      "estoque_maximo": 150,
+      "estoque_atual": 75,
+      "preco": 12.99,
+      "categoria_id": 4
+    }
+  ],
+  "lote_mercadoria": [
+    {
+      "id": 1,
+      "mercadoria_id": 2,
+      "lote": "000000",
+      "local": "00000",
+      "validade": "--/--/-----"
+    }
+  ],
+  "clientes": [
+    {
+      "nome": "ClienteUm",
+      "cpf": "***.***.***.**",
+      "dataNascimento": "--/--/----",
+      "telefone": "(22)22222-2222",
+      "email": "emailClienteUm@email.com"
+    },
+    {
+      "nome": "ClienteDois",
+      "cpf": "***.***.***.**",
+      "dataNascimento": "--/--/----",
+      "telefone": "(22)22222-2222",
+      "email": "emailClienteDois@email.com"
+    },
+    {
+      "nome": "ClienteTres",
+      "cpf": "***.***.***.**",
+      "dataNascimento": "--/--/----",
+      "telefone": "(22)22222-2222",
+      "email": "emailClienteTres@email.com"
+    },
+    {
+      "nome": "ClienteQuatro",
+      "cpf": "***.***.***.**",
+      "dataNascimento": "--/--/----",
+      "telefone": "(22)22222-2222",
+      "email": "emailClienteQuatro@email.com"
+    }
+  ],
+  "compras": [
+    {
+      "id": 1,
+      "funcionario_id": 2,
+      "fornecedor_id": 2,
+      "data_compra": "--/--/----"
+    }
+  ],
+  "item_compra": [
+    {
+      "id": 1,
+      "compra_id": 1,
+      "mercadoria_id": 1,
+      "quantidade": 10,
+      "lote": "000000",
+      "valor_unitario": 45.9
+    },
+    {
+      "id": 2,
+      "compra_id": 1,
+      "mercadoria_id": 2,
+      "quantidade": 105,
+      "lote": "000000",
+      "valor_unitario": 12.5
+    }
+  ],
+  "vendas": [
+    {
+      "id": 1,
+      "data_venda": "--/--/----",
+      "funcionario_id": 1,
+      "cliente_id": 2
+    }
+  ],
+  "item_venda": [
+    {
+      "id": 1,
+      "venda_id": 1,
+      "lote_id": 1,
+      "quantidade": 10
     }
   ]
 }

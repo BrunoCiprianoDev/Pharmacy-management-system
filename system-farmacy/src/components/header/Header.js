@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import imageIcon from '../../assets/lupaIcon.png'
 import {useOptionContext} from '../../hook/useOptionContext';
@@ -8,6 +8,7 @@ const Header = () => {
   
   const navigate = useNavigate();
   const {option} = useOptionContext();
+  const [query, setQuery] = useState();
 
   const formSelector = () => {
     if(option === 'FUNCIONARIOS'){
@@ -15,11 +16,18 @@ const Header = () => {
     }
   }
 
+  const searchSelector = (e) => {
+    e.preventDefault();
+    if(option === 'FUNCIONARIOS'){
+      navigate("/funcionarios/search?q="+query);
+    }
+  }
+
   return (
     <div className='ContainerHeader'>
         <button className='ButtonAdd' onClick={()=>formSelector()}>+</button>
-        <form className='HeaderForm'>
-            <input type="text" className='HeaderInput' placeholder={'PESQUISAR POR '+option}/>
+        <form onSubmit={searchSelector} className='HeaderForm'>
+            <input type="text" onChange={(e)=>setQuery(e.target.value)} className='HeaderInput' placeholder={'PESQUISAR POR '+option}/>
             <button type="submit" className='ButtonHeaderInput'><img src={imageIcon} alt="" className='ImageIconSearch' /></button>
         </form>
     </div>

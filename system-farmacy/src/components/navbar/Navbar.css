@@ -17,10 +17,14 @@
 }
 
 .SideIcons {
-    grid-area: sideIcons;
-    width: 4.5em;
     height: 100%;
+    display: grid;
+    grid-template-columns: 4.5em;
+    grid-template-rows: 6em auto;
+    grid-template-areas: "header"
+                         "body";
 }
+
 
 @media screen and (max-width: 1600px) {
     .SideIcons {
@@ -35,7 +39,6 @@
     font-size: large;
     grid-area: contend;
     height: 100%;
-
 }
 
 nav {
@@ -68,3 +71,5 @@ nav {
 .NavLink:hover {
     background-color: rgb(156, 156, 156);
 }
+
+
