@@ -12,7 +12,7 @@
       "logradouro": "Av. juiz",
       "numero": "Funcionario um",
       "complemento": "302",
-      "telefone_um": "(00)00000-0000",
+      "telefone_um": "(32)98867-0548",
       "telefone_dois": "(00)00000-0000",
       "email": "emailUmFuncionario@email.com",
       "dt_admissao": "00/00/0000",
@@ -61,7 +61,7 @@
       "classe": "beleza",
       "tipo": "remedio",
       "classificacao": "tarja vermelha",
-      "desconto": "10%"
+      "desconto": "15.6"
     },
     {
       "id": "2",
@@ -78,11 +78,11 @@
       "desconto": "0%"
     },
     {
-      "id": "4",
-      "classe": "antiepileptico",
-      "tipo": "remedio",
-      "classificacao": "tarja preta",
-      "desconto": "12%"
+      "tipo": "Remedio",
+      "classe": "B",
+      "classificacao": "Antibiotico",
+      "desconto": "56",
+      "id": "nRsDLPR"
     }
   ],
   "fornecedores": [

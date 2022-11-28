@@ -15,7 +15,7 @@ export const Navbar = () => {
       <div className='ContainerNav'>
         <nav>
           <NavLink to="/funcionarios" onClick={()=>setOption('FUNCIONARIOS')} className={option === 'FUNCIONARIOS' ?  'NavLinkActive': 'NavLink'}>Funcionários</NavLink>
-          <NavLink onClick={()=>setOption('CATEGORIAS')} className={option === 'CATEGORIAS' ? 'NavLinkActive' : 'NavLink'} >Categorias</NavLink>
+          <NavLink to="/categorias" onClick={()=>setOption('CATEGORIAS')} className={option === 'CATEGORIAS' ? 'NavLinkActive' : 'NavLink'} >Categorias</NavLink>
           <NavLink onClick={()=>setOption('MERCADORIAS')} className={option === 'MERCADORIAS' ? 'NavLinkActive' : 'NavLink'}>Mercadorias</NavLink>
           <NavLink onClick={()=>setOption('FORNECEDORES')} className={option === 'FORNECEDORES' ? 'NavLinkActive' : 'NavLink'}>Fornecedores</NavLink>
           <NavLink onClick={()=>setOption('COMPRAS')} className={option === 'COMPRAS' ? 'NavLinkActive' : 'NavLink'}>Compras</NavLink>

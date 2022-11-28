@@ -6,6 +6,10 @@ import FuncionariosList from './pages/funcionarios/listaFuncionarios/Funcionario
 import FuncionarioDetalhes from './pages/funcionarios/detalheFuncionario/FuncionarioDetalhes';
 import FormFuncionarios from './pages/funcionarios/formFuncionarios/FormFuncionarios';
 import FuncionarioSearch from './pages/funcionarios/searchFuncionario/FuncionarioSearch';
+import CategoriasList from './pages/categorias/listaCategorias/CategoriasList';
+import CategoriaDetalhes from './pages/categorias/detalheCategoria/CategoriaDetalhes';
+import FormCategorias from './pages/categorias/formCategorias/FormCategorias';
+import CategoriaSearch from './pages/categorias/searchCategoria/CategoriaSearch';
 
 function App() {
   return (
@@ -19,6 +23,12 @@ function App() {
             <Route path="/funcionarios/:id" element={<FuncionarioDetalhes/>}/>
             <Route path="/funcionarios/form" element={<FormFuncionarios/>}/>
             <Route path="/funcionarios/search" element={<FuncionarioSearch/>}/>
+
+            <Route path="/categorias/" element={<CategoriasList/>}/>
+            <Route path="/categorias/:id" element={<CategoriaDetalhes/>}/>
+            <Route path="/categorias/form" element={<FormCategorias/>}/>
+            <Route path="/categorias/search" element={<CategoriaSearch/>}/>
+
           </Routes>
         </div>
         </BrowserRouter>
